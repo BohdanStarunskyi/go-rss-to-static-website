@@ -39,7 +39,7 @@ func main() {
 	urls := []string{}
 
 	var wg sync.WaitGroup
-	parsed := make(chan ParsingResult, 100)
+	parsed := make(chan ParsingResult)
 
 	templateBytes, err := os.ReadFile("./assets/template.html")
 	if err != nil {

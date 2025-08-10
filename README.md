@@ -42,7 +42,7 @@ go.mod / go.sum     # Dependency management
 
    * Parses the RSS feed using `gofeed`.
    * Extracts article `Title`, `Description`, and `Link`.
-   * Sends results back over a buffered channel.
+   * Sends results back over an unbuffered channel.
 3. A collector goroutine waits for all feed goroutines to finish, closes the channel, and aggregates items into `allItems`.
 4. Items are sorted and grouped by `Source` and rendered into the template.
 5. The final `result.html` file is written to disk.
@@ -113,7 +113,6 @@ go run main.go
 ## Notes & Tips
 
 * The `extractSource` function uses the hostname parts to derive a short source name; adjust it if you need full domain names.
-* Increase the channel buffer if you parse many feeds simultaneously.
 * Consider sanitizing or truncating long descriptions when rendering HTML.
 * For production use, add error handling/logging and consider rate-limiting or caching.
 
