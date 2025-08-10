@@ -1,4 +1,4 @@
-# go-rss-to-static-website
+# Go RSS To Static Website
 
 A simple, concurrent RSS feed parser written in Go. Fetches articles from multiple news sources, groups them by source, and generates a styled HTML file you can open in your browser.
 
@@ -16,6 +16,9 @@ A simple, concurrent RSS feed parser written in Go. Fetches articles from multip
 * Parsing powered by the `gofeed` library.
 * Source extraction using the feed URL's hostname.
 * Output HTML (`result.html`) created by replacing a `{{ITEMS}}` placeholder in a template file.
+
+## Video demo
+[Link](https://youtu.be/f7fh2Nartok)
 
 ## Tech Stack
 
