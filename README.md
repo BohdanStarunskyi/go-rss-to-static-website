@@ -18,7 +18,7 @@ A simple, concurrent RSS feed parser written in Go. Fetches articles from multip
 * Output HTML (`result.html`) created by replacing a `{{ITEMS}}` placeholder in a template file.
 
 ## Video demo
-[Link](https://youtu.be/f7fh2Nartok)
+[Link](https://youtu.be/M21Iw2a0X_4)
 
 ## Tech Stack
 
